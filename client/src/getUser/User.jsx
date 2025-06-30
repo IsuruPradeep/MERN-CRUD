@@ -32,12 +32,12 @@ const User = () => {
                 <tbody>
                     {users.map((user, index) => {
                         return (
-                            <tr>
+                            <tr key={user._id || index}>
                                 <td>{index+1}</td>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
                                 <td>{user.adress}</td>
-                                <td className='actionButtons'><button type="button" className="btn btn-info"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <td className='actionButtons'><button type="button" className="btn btn-info"><i className="fa-solid fa-pen-to-square"></i></button>
                                 <button type="button" className="btn btn-danger"><i className="fa-solid fa-trash"></i></button></td>
                             </tr>
                         )
