@@ -1,7 +1,7 @@
 import './App.css';
 import AddUser from "./addUser/AddUser"
 import User from './getUser/User';
-import { createBrowserRouter, Route, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 
 function App() {
   const  route = createBrowserRouter([
